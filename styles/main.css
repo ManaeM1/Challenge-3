@@ -52,7 +52,7 @@ figure{
 .content1{
 	background: #3D3D3D;
 	border-radius: 12px;
-	height: 170px;
+	height: 100%;
 }
 h2{
 	color: #f2f2f2;
@@ -86,12 +86,12 @@ h2{
 	border-radius: 12px;
 }
 #map{
-	height: 200px;
+	height: 300px;
 	border-radius: 12px;
-  }
-  p{
+}
+p{
   	font-size: 11px;
-  }
+}
 
 
 /* TABLET */
@@ -121,9 +121,7 @@ h2{
 	}
 
 	/* Content 1 - Arrival */
-	.content1{
-		height: 200px;
-	}
+
 	h2{
 		font-size: 16px;
 		margin-top: 20px;
@@ -131,11 +129,11 @@ h2{
 	}
 	.title{
 		font-size: 14px;
-		margin-left: 40px;
+		margin-left: 20px;
 	}
 	.info{
 		font-size: 14px;
-		margin-left: 40px;
+		margin-left: 20px;
 		margin-bottom: 30px;
 	}
 
@@ -154,6 +152,13 @@ h2{
 	/* Content 3 - Map*/
 	.content3{
 		border-radius: 12px;
+	}
+	#map{
+		height: 350px;
+		border-radius: 12px;
+	}
+	p{
+  		font-size: 12px;
 	}
 }
 
