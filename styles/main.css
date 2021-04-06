@@ -1,0 +1,204 @@
+/*Grid*/
+.field{
+	background: #1A1A1A;
+	grid-area: field;
+}
+
+.content1{
+	background: #6516C7;
+	grid-area: content1;
+}
+
+.content2{
+	grid-area: content2;
+}
+
+.content3{
+	grid-area: content3;
+}
+
+body{
+	background: #1A1A1A;
+	font-family: 'Arial', sans-serif;
+}
+
+/* MOBILE */
+.gridlayout{
+	display: grid;
+	height: 100vh;
+	max-width: 2000px;
+	margin: 0 auto;
+	grid-gap: 0.7rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.2fr 1fr 2fr;
+	grid-template-areas:
+		"field field"
+		"content1 content2"
+		"content3 content3";
+}
+
+/* Logo */
+.logo{
+	width: 30%;
+	max-width: 450px;
+	height: auto;
+	margin: 0px;
+}
+figure{
+	margin: 10px;
+}
+
+/* Content 1 - Arrival */
+.content1{
+	background: #3D3D3D;
+	border-radius: 12px;
+	height: 170px;
+}
+h2{
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.title{
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #f2f2f2;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+.info{
+	color: #03DAC5;
+	font-size: 12px;
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+/* Content 2 - Slideshow*/
+.responsive_photo{
+  	border-radius: 12px;
+  	height: 100%;
+}
+
+/* Content 3 - Map*/
+.content3{
+	border-radius: 12px;
+}
+#map{
+	height: 200px;
+	border-radius: 12px;
+  }
+  p{
+  	font-size: 11px;
+  }
+
+
+/* TABLET */
+@media only screen and (min-width: 600px) {
+	.gridlayout{
+		display: grid;
+		height: 100vh;
+		max-width: 2000px;
+		margin: 0 auto;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.2fr 1fr 2fr;
+		grid-template-areas:
+			"field field"
+			"content1 content2"
+			"content3 content3";
+	}
+	body{
+		margin: 15px;
+	}
+
+	/* Logo */
+	.logo{
+		width: 30%;
+		max-width: 450px;
+		height: auto;
+	}
+
+	/* Content 1 - Arrival */
+	.content1{
+		height: 200px;
+	}
+	h2{
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.title{
+		font-size: 14px;
+		margin-left: 40px;
+	}
+	.info{
+		font-size: 14px;
+		margin-left: 40px;
+		margin-bottom: 30px;
+	}
+
+
+	/* Content 2 - Slideshow*/
+	.content2{
+		background: #3D3D3D;
+		border-radius: 12px;
+	}
+	.responsive_photo{
+		height: 200px;
+		object-fit: contain;
+	}
+
+
+	/* Content 3 - Map*/
+	.content3{
+		border-radius: 12px;
+	}
+}
+
+
+/* LAPTOP SMALL */
+@media only screen and (min-width: 1000px) {
+	.gridlayout{
+		display: grid;
+		height: 100vh;
+		max-width: 2000px;
+		margin: 0 auto;
+		grid-gap: 0.7rem;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 0.2fr 1fr 2fr;
+		grid-template-areas:
+			"field field"
+			"content1 content3"
+			"content2 content3";
+	}
+	/* Logo */
+	.logo{
+		width: 150px;
+		height: auto;
+	}
+
+	/* Content 1 - Arrival */
+	.content1{
+		height: 180px;
+	}
+
+	/* Content 2 - Slideshow*/
+	.content2{
+		height: 200px;
+	}
+
+	/* Content 3 - Map*/
+	.content3{
+		border-radius: 12px;
+	}
+	#map{
+		height: 500px;
+		border-radius: 12px;
+  	}
+  	p{
+  		font-size: 11px;
+  	}
+
+}
