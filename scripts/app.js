@@ -47,7 +47,7 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/outdoors-v11',
   center: [-80.69396772953425, 28.614043921023864],
-  zoom: 10
+  zoom: 9.5
 });
 
 
