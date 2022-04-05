@@ -31,7 +31,16 @@ var cities = [
     name: 'Brevard County',
     coordinates: [-80.71011791811772, 28.644175961199952]
   },
+    {
+    name: 'Titusville',
+    coordinates: [-80.819722, 28.591111]
+  },
+    {
+    name: 'Cocoa',
+    coordinates: [-80.743611, 28.369167]
+  },
 ];
+
 
 //Location
 var map = new mapboxgl.Map({
